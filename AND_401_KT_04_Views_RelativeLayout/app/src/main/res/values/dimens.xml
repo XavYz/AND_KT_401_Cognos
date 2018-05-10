@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anchoBotonOscuro">100dp</dimen>
+    <dimen name="altoBotonOscuro">125dp</dimen>
+    <dimen name="tamanioTexto">40sp</dimen>
+    <dimen name="tamanioTextoRes">70sp</dimen>
+</resources>
