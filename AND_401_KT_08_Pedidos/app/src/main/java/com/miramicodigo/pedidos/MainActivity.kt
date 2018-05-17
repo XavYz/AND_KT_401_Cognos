@@ -10,18 +10,11 @@ class MainActivity : AppCompatActivity() {
 
     var cantidad = 1
     var precio = 2.5
-    var total: Double = 0.toDouble()
+    var total : Double = 0.toDouble()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
-
-    fun menos(v: View) {
-        if (cantidad > 1) {
-            cantidad = cantidad - 1
-        }
-        tvCantidad.text = cantidad.toString()
     }
 
     fun mas(v: View) {
@@ -29,16 +22,24 @@ class MainActivity : AppCompatActivity() {
         tvCantidad.text = cantidad.toString()
     }
 
+    fun menos(v: View) {
+        if(cantidad > 1) {
+            cantidad = cantidad - 1
+        }
+        tvCantidad.text = cantidad.toString()
+    }
+
     fun calcular(v: View) {
         total = cantidad * precio
         val nombre = etNombre.text.toString()
-        if (nombre == "") {
-            Toast.makeText(this,"Debe colocar su apellido", Toast.LENGTH_SHORT).show()
-        } else {
+        if(!nombre.equals("")) {
             tvResumenCantidad.text = cantidad.toString()
             tvResumenPrecioUnitario.text = "Bs. $precio"
             tvResumenCostoTotal.text = "Bs. $total"
             tvResumenNombre.text = nombre
+        } else {
+            Toast.makeText(this, "Debe colocar el nombre",
+                    Toast.LENGTH_SHORT).show()
         }
     }
 }
