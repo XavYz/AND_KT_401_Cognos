@@ -1,10 +1,9 @@
 package com.miramicodigo.intents
 
 import android.app.Activity
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.content.Intent
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_segunda.*
 
 class SegundaActivity : AppCompatActivity() {
@@ -18,13 +17,12 @@ class SegundaActivity : AppCompatActivity() {
         try {
             tvTextoUno.text = bundle!!.getString("valor1", "")
             tvTextoDos.text = bundle!!.getString("valor2", "")
-        } catch (e: Exception) {
-            Log.e("SegundaActivity","Algun valor es nulo")
+        } catch (e : Exception){
         }
 
         try {
             etCajaTexto.setText(bundle!!.getString("valor3", ""))
-        } catch (e: Exception) {
+        }catch (e: Exception) {
         }
 
         btnRespuesta.setOnClickListener {
@@ -33,5 +31,6 @@ class SegundaActivity : AppCompatActivity() {
             setResult(Activity.RESULT_OK, intent)
             finish()
         }
+
     }
 }
