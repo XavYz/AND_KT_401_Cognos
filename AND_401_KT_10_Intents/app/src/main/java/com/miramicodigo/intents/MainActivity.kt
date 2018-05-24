@@ -3,20 +3,20 @@ package com.miramicodigo.intents
 import android.Manifest
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
-import android.app.SearchManager
 import android.app.Activity
+import android.app.SearchManager
 import android.support.v4.app.ActivityCompat
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.support.v4.content.ContextCompat
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() , View.OnClickListener {
-
     val DEVUELVE_DATOS = 2
+    val PERMISO_LLAMADA = 123
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         val permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE)
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
-                    arrayOf(Manifest.permission.CALL_PHONE), 123)
+                    arrayOf(Manifest.permission.CALL_PHONE), PERMISO_LLAMADA)
         } else {
             val intent = Intent(Intent.ACTION_CALL)
             intent.data = Uri.parse("tel:77752810")
@@ -112,7 +112,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         when (requestCode) {
-            123 -> if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            PERMISO_LLAMADA -> if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 llamar()
             } else {
                 Toast.makeText(this, "PERMISO DENEGADO", Toast.LENGTH_SHORT).show()
