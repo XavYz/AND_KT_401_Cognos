@@ -8,6 +8,7 @@ import android.app.Activity
 import android.content.Context
 import android.view.View
 import android.widget.BaseAdapter
+import android.widget.CheckBox
 import android.widget.ImageView
 import java.util.*
 
@@ -45,14 +46,30 @@ class CustomAdapter(activity: Activity, data: ArrayList<Pokemon>) : BaseAdapter(
             viewHolder = convertView!!.tag as ViewHolder
         }
 
+        val tfBold = Typeface.createFromAsset(context.assets, "fonts/roboto_black.ttf")
+        val tfThin = Typeface.createFromAsset(context.assets, "fonts/roboto_thin.ttf")
+
+        viewHolder.itemTitulo.typeface = tfBold
+        viewHolder.itemSubtitulo.typeface = tfThin
+
+        val temp = getItem(position) as Pokemon
+        viewHolder.itemTitulo.text = temp.titulo
+        viewHolder.itemSubtitulo.text = temp.subtitulo
+        viewHolder.itemImagen.setImageResource(temp.imagen)
 
         return convertView
     }
 
     private inner class ViewHolder(view: View) {
+        var itemTitulo: TextView
+        var itemSubtitulo: TextView
+        var itemImagen: ImageView
 
-
-
+        init {
+            itemTitulo = view.findViewById(R.id.tvTitulo) as TextView
+            itemSubtitulo = view.findViewById(R.id.tvSubtitulo) as TextView
+            itemImagen = view.findViewById(R.id.ivImagen) as ImageView
+        }
     }
 
 }
