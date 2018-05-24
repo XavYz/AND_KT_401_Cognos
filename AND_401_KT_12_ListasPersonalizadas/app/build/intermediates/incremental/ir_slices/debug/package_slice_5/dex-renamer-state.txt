@@ -1,0 +1,4 @@
+#Thu May 24 08:39:22 BOT 2018
+base.0=C\:\\COMPARTIDA\\ANDROID COMPARTIDA\\Demos\\AND_401_KT_12_ListasPersonalizadas\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

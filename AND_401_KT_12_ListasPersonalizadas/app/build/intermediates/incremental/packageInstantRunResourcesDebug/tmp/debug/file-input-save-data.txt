@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Thu May 24 09:24:03 BOT 2018
+1.base=C\:\\COMPARTIDA\\ANDROID COMPARTIDA\\Demos\\AND_401_KT_12_ListasPersonalizadas\\app\\build\\intermediates\\assets\\debug
+2.path=fonts/roboto_black.ttf
+0.baseType=DIRECTORY
+2.base=C\:\\COMPARTIDA\\ANDROID COMPARTIDA\\Demos\\AND_401_KT_12_ListasPersonalizadas\\app\\build\\intermediates\\assets\\debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=ASSET
+0.path=fonts/roboto_thin.ttf
+0.set=ASSET
+0.base=C\:\\COMPARTIDA\\ANDROID COMPARTIDA\\Demos\\AND_401_KT_12_ListasPersonalizadas\\app\\build\\intermediates\\assets\\debug
+2.baseType=DIRECTORY
+1.path=fonts/itc.TTF
