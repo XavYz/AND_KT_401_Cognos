@@ -20,18 +20,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //asignar la forma en que se visualizaran los items
         rvDatos.layoutManager = LinearLayoutManager(applicationContext)
 
         listaDatos = llenarDatos()
 
-        Toast.makeText(this, "Cantidad: ${listaDatos!!.size}", Toast.LENGTH_SHORT).show()
-
         adaptador = RecyclerViewAdapter(listaDatos!!)
-        rvDatos.adapter = adaptador;
 
+        rvDatos.adapter = adaptador
     }
 
-    fun llenarDatos(): ArrayList<String>{
+    fun llenarDatos(): ArrayList<String> {
         var datos = ArrayList<String>()
         for (i in 0..500) {
             datos.add("Item en posicion: ${i + 1}")
@@ -39,11 +38,12 @@ class MainActivity : AppCompatActivity() {
         return datos
     }
 
+    //Enlace con el diseño del Item de la lista
     inner class RecyclerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvTexto: TextView = itemView as TextView
-
+        val tvTexto : TextView = itemView as TextView
     }
 
+    //Enlazar un LAYOUT, asignar datos
     inner class RecyclerViewAdapter(val data: ArrayList<String>) : RecyclerView.Adapter<RecyclerViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
         override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) {
             val dato = data[position]
             holder.tvTexto.text = dato
-
         }
 
         override fun getItemCount(): Int {
