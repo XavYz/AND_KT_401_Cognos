@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTitulo"
+        android:textSize="@dimen/tvTituloSize"
+        android:layout_margin="@dimen/tvTituloMargin"
+        android:textColor="@color/colorTvTitulo"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvSubtitulo"
+        android:textSize="@dimen/tvSubtituloSize"
+        android:layout_below="@id/tvTitulo"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tvSubtitulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvSubtitulo2"
+        android:textSize="@dimen/tvSubtituloSize2"
+        android:layout_below="@id/tvSubtitulo"
+        android:gravity="center_horizontal"/>
+
+
+
+</RelativeLayout>

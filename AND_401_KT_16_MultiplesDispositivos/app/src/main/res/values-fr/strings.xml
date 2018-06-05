@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Périphériques multiples</string>
+
+    <string name="tvTitulo">Écran de titre</string>
+    <string name="tvSubtitulo">Bonjour</string>
+    <string name="tvSubtitulo2">Bienvenue</string>
+</resources>

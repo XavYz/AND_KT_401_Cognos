@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tvTituloSize">100sp</dimen>
+    <dimen name="tvTituloMargin">30dp</dimen>
+</resources>
