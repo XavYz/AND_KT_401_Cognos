@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AND_401_KT_17_FragmentsSimple</string>
+<<<<<<< HEAD
+=======
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> a5f3984f06776ec12ede3f7c09c996f5b1772dbc
 </resources>

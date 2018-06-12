@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+<<<<<<< HEAD
+=======
+
+    <color name="colorTvTitulo">#353535</color>
+>>>>>>> a5f3984f06776ec12ede3f7c09c996f5b1772dbc
 </resources>

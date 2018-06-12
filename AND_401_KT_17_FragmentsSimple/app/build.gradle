@@ -8,7 +8,11 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.miramicodigo.fragmentssimple"
+<<<<<<< HEAD
         minSdkVersion 15
+=======
+        minSdkVersion 19
+>>>>>>> a5f3984f06776ec12ede3f7c09c996f5b1772dbc
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -24,9 +28,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+<<<<<<< HEAD
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+=======
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+>>>>>>> a5f3984f06776ec12ede3f7c09c996f5b1772dbc
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

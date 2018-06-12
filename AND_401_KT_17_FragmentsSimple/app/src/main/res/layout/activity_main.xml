@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -16,3 +17,42 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
+=======
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/ibBolivia"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:src="@drawable/boliva"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/ibParaguay"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:src="@drawable/paraguay"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/ibBrasil"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:src="@drawable/brasil"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>
+>>>>>>> a5f3984f06776ec12ede3f7c09c996f5b1772dbc

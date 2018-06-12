@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multiple Devices</string>
+
+    <string name="tvTitulo">Screen Title</string>
+    <string name="tvSubtitulo">Hello</string>
+    <string name="tvSubtitulo2">Welcome</string>
+</resources>

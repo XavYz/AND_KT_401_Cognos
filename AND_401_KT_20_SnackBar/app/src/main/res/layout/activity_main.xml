@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSnackbarSimple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SnackBar Simple"/>
+
+        <Button
+            android:id="@+id/btnSnackbarConAccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SnackBar con Accion"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnSnackbarPersonalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SnackBar Personalizado"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
