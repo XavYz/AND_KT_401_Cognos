@@ -1,4 +1,4 @@
-package com.miramicodigo.and_401_kt_24_bottomnavigationview
+package com.miramicodigo.bottomnavigationview
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.miramicodigo.and_401_kt_24_bottomnavigationview
+package com.miramicodigo.bottomnavigationview
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.miramicodigo.and_401_kt_24_bottomnavigationview", appContext.packageName)
+        assertEquals("com.miramicodigo.bottomnavigationview", appContext.packageName)
     }
 }

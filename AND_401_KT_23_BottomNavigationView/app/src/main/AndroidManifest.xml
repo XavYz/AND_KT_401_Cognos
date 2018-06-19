@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.miramicodigo.and_401_kt_24_bottomnavigationview">
+    package="com.miramicodigo.bottomnavigationview">
 
     <application
         android:allowBackup="true"
