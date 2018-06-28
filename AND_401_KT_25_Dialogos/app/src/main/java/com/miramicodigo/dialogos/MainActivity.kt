@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                 .setSingleChoiceItems(opciones, 0) { dialogInterface, i -> posicion = i }
                 .setPositiveButton("ACEPTAR"){ dialogInterface, i ->
                     Toast.makeText(applicationContext,
-                            "Seleccionaste: ${opciones.get(posicion)}", Toast.LENGTH_SHORT).show()
+                            "Seleccionaste: ${opciones[posicion]}", Toast.LENGTH_SHORT).show()
                 }
                 .setNegativeButton("CANCELAR") { dialogInterface, i ->
 
