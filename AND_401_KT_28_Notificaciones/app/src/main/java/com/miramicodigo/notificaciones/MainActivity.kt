@@ -16,9 +16,7 @@ import android.app.NotificationChannel
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import android.R.attr.banner
-
-
-
+import android.media.RingtoneManager
 
 class MainActivity : AppCompatActivity(), View.OnClickListener{
 
@@ -59,6 +57,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
 
         val intent = Intent(context, ResultadoActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(context, 0, intent, 0)
+
+        val v = longArrayOf(0, 400, 100, 300, 200, 300)
+        val uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+
 
         notification.setContentIntent(pendingIntent)
         notification.setLargeIcon(BitmapFactory.decodeResource(
