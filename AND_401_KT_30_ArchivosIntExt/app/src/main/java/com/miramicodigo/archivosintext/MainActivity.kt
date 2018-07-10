@@ -14,7 +14,6 @@ import android.os.Build
 import android.provider.Settings
 import android.util.Log
 
-
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     val nombreArchivoInterno = "prueba_archivo_int.txt"
@@ -31,23 +30,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnExternoGuardar.setOnClickListener(this)
 
         verificaPermiso()
-
     }
 
     override fun onClick(p0: View?) {
-        when (p0!!.getId()) {
+        when (p0!!.id) {
             R.id.btnInternoGuardar -> guardarInterno()
             R.id.btnInternoLeer -> leerInterno()
             R.id.btnExternoGuardar -> guardarExterno()
-            R.id.btnExternoLeer -> etExterno.setText(leerExterno())
+            R.id.btnExternoLeer -> leerExterno()
         }
     }
 
     fun guardarInterno() {
         if (etInterno.text.toString() != "") {
             try {
-                val output = OutputStreamWriter(
-                        openFileOutput(nombreArchivoInterno, Context.MODE_PRIVATE))
+                val output = OutputStreamWriter(openFileOutput(nombreArchivoInterno, Context.MODE_PRIVATE))
                 output.write(etInterno.text.toString())
                 output.close()
                 etInterno.setText("")
@@ -62,25 +59,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     fun leerInterno() {
         try {
-            val br = BufferedReader(
-                    InputStreamReader(openFileInput(nombreArchivoInterno)))
-            var cadena: String
+            val directory = this.filesDir
+            val file = File(directory, nombreArchivoInterno)
+            val bufferedReader = file.bufferedReader()
+            val text:List<String> = bufferedReader.readLines()
             var resultado = ""
-            cadena = br.readLine()
-            while (cadena != null) {
-                resultado = resultado + cadena + "\n"
-                cadena = br.readLine()
+            for(line in text){
+                resultado = resultado + line + "\n"
             }
-            br.close()
             etInterno.setText(resultado)
         } catch (e: Exception) {
             println("Error: " + e.message)
         }
-
     }
 
     fun guardarExterno() {
-        if (etExterno.text.toString() != "") {
+        if (!etExterno.text.toString().equals("")) {
             var sdDisponible = false
             var sdAccesoEscritura = false
             val state = Environment.getExternalStorageState()
@@ -98,53 +92,47 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             if (sdDisponible && sdAccesoEscritura) {
                 try {
-                    val dir = File("${Environment.getExternalStorageDirectory()} ${nombreCarpeta}")
+                    val tarjeta = Environment.getExternalStorageDirectory()
+                    val dir = File(tarjeta.toString() + nombreCarpeta)
                     if (!dir.exists()) {
                         dir.mkdirs()
                     }
                     val file = File(dir, nombreArchivoExterno)
-                    val valor = etExterno.text.toString()
-                    try {
-                        val osw = OutputStreamWriter(
-                                FileOutputStream(file, false))
-                        osw.write(valor)
-                        osw.close()
-                        etExterno.setText("")
-                        Toast.makeText(applicationContext, "Se guardo en memoria externa exitosamente", Toast.LENGTH_SHORT).show()
-                    } catch (e: Exception) {
-                        println("Error: " + e.message)
-                    }
-                } catch (e: Exception) {
-                    println("Error: " + e.message)
+                    val osw = OutputStreamWriter(FileOutputStream(file))
+                    osw.write(etExterno.text.toString())
+                    osw.flush()
+                    osw.close()
+                    Toast.makeText(this, "Se guardo exitosamente", Toast.LENGTH_SHORT).show()
+                    etExterno.setText("")
+                } catch (ioe: IOException) {
+                    Toast.makeText(this, "No se pudo grabar", Toast.LENGTH_SHORT).show()
                 }
 
             } else {
                 println("No se puede escribir en su memoria")
             }
         } else {
-            Toast.makeText(applicationContext, "Debe ingresar datos para guardar", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,
+                    "Debe ingresar datos para guardar",
+                    Toast.LENGTH_SHORT).show()
         }
+
     }
 
-    fun leerExterno(): String {
+    fun leerExterno() {
         try {
-            val file = Environment.getExternalStorageDirectory()
-            val f = File(file.absolutePath, nombreCarpeta + nombreArchivoExterno)
-            val br = BufferedReader(InputStreamReader(FileInputStream(f)))
-            var cadena: String
+            val directory = Environment.getExternalStorageDirectory()
+            val file = File(directory, nombreCarpeta+nombreArchivoExterno)
+            val bufferedReader = file.bufferedReader()
+            val text:List<String> = bufferedReader.readLines()
             var resultado = ""
-            cadena = br.readLine()
-            while (cadena != null) {
-                resultado = resultado + cadena + "\n"
-                cadena = br.readLine()
+            for(line in text){
+                resultado = resultado + line + "\n"
             }
-            br.close()
-            return resultado
+            etExterno.setText(resultado)
         } catch (e: Exception) {
             println("Error: " + e.message)
-            return ""
         }
-
     }
 
     fun verificaPermiso() {
