@@ -3,68 +3,88 @@ package com.miramicodigo.asynctask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.AsyncTask
-import android.widget.Toast
-import android.app.ProgressDialog
 import android.view.View
-import android.widget.TextView
 import java.net.HttpURLConnection
 import java.net.URL
+import kotlinx.android.synthetic.main.activity_main.*
+import java.io.BufferedReader
+import java.io.InputStream
+import java.io.InputStreamReader
 
 class MainActivity : AppCompatActivity() {
 
-    private var dialog: ProgressDialog? = null
-    private var textView: TextView? = null
-
-    public override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        textView = findViewById<TextView>(R.id.tvResultado)
-        dialog = ProgressDialog(this)
+
+        CallBtn.setOnClickListener {
+            AsyncTaskExample().execute()
+        }
     }
 
-    fun onClick(view: View) {
-        val task = DownloadWebPageTask()
-        task.execute(*arrayOf("http://www.instagram.com", "http://www.google.com", "http://www.bolivia.com"))
-    }
-
-    fun toast(v: View) {
-        Toast.makeText(
-                applicationContext,
-                "Muestra Toast",
-                Toast.LENGTH_SHORT).show()
-    }
-
-    private inner class DownloadWebPageTask : AsyncTask<String, Void, String>() {
-
+    inner class AsyncTaskExample : AsyncTask<String, String, String>() {
         override fun onPreExecute() {
             super.onPreExecute()
-            dialog!!.setMessage("Progreso iniciado")
-            dialog!!.setCancelable(false)
-            dialog!!.show()
+            progressBar.visibility = View.VISIBLE;
         }
 
-        override fun doInBackground(vararg strings: String): String {
-            var response = ""
-            for (url in strings) {
-                val connection = URL(url).openConnection() as HttpURLConnection
-                try {
-                    val data = connection.inputStream.bufferedReader().readText()
-                    response += data
-                } finally {
-                    connection.disconnect()
+        override fun doInBackground(vararg p0: String?): String {
+            var result: String = "";
+            val apiUrl = "http://androidpala.com/tutorial/http.php?get=1"
+            try {
+                val url = URL(apiUrl)
+                val connect = url.openConnection() as HttpURLConnection
+                connect.readTimeout = 8000
+                connect.connectTimeout = 8000
+                connect.requestMethod = "GET"
+                connect.doOutput = true
+                connect.connect()
+
+                val responseCode: Int = connect.responseCode
+                println("Res: $responseCode")
+                if (responseCode == 200) {
+                    val tempStream: InputStream = connect.inputStream
+                    if (tempStream != null) {
+                        result = ConvertToString(tempStream)
+                    }
                 }
-
+            } catch(Ex: Exception) {
+                println("Error en doInBackground ${Ex.message}")
             }
-            return response
+            return result
+
         }
 
-        override fun onPostExecute(s: String) {
-            super.onPostExecute(s)
-            if (dialog!!.isShowing) {
-                dialog!!.dismiss()
+        override fun onPostExecute(result: String?) {
+            super.onPostExecute(result)
+            progressBar.visibility = View.INVISIBLE
+
+            if (result == "") {
+                tvResultado.text = "Error de red"
+            } else {
+                tvResultado.text = result
             }
-            textView!!.text = s
         }
+    }
+
+    fun ConvertToString(inStream: InputStream): String {
+        var result: String = ""
+        val isReader = InputStreamReader(inStream)
+        var bReader = BufferedReader(isReader)
+        var tempStr: String?
+
+        try {
+            while (true) {
+                tempStr = bReader.readLine()
+                if (tempStr == null) {
+                    break
+                }
+                result += tempStr;
+            }
+        } catch(Ex: Exception) {
+            println("Error en convertir a String ${Ex.printStackTrace()}")
+        }
+        return result
     }
 
 }
