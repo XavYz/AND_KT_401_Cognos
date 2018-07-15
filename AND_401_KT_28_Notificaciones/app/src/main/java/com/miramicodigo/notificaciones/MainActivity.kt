@@ -16,6 +16,7 @@ import android.app.NotificationChannel
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import android.R.attr.banner
+import android.app.Notification
 import android.media.RingtoneManager
 
 class MainActivity : AppCompatActivity(), View.OnClickListener{
@@ -179,6 +180,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
                     .setContentText("Aca abajo estan los botones")
                     .addAction(R.drawable.ic_android_black_24dp, "Aceptar", pendingIntent)
                     .addAction(R.mipmap.ic_launcher, "Cancelar", pendingIntent)
+
+            sendBroadcast(Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS));
 
             mNotificationManager!!.notify(1000, notification.build())
         } else {
