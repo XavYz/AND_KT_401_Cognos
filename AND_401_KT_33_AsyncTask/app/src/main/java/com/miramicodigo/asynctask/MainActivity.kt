@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
     inner class AsyncTaskExample : AsyncTask<String, String, String>() {
         override fun onPreExecute() {
             super.onPreExecute()
-            progressBar.visibility = View.VISIBLE;
+            progressBar.visibility = View.VISIBLE
         }
 
         override fun doInBackground(vararg p0: String?): String {
-            var result: String = "";
+            var result: String = ""
             val apiUrl = "http://androidpala.com/tutorial/http.php?get=1"
             try {
                 val url = URL(apiUrl)
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                 if (responseCode == 200) {
                     val tempStream: InputStream = connect.inputStream
                     if (tempStream != null) {
-                        result = ConvertToString(tempStream)
+                        result = convertToString(tempStream)
                     }
                 }
             } catch(Ex: Exception) {
@@ -67,8 +67,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun ConvertToString(inStream: InputStream): String {
-        var result: String = ""
+    fun convertToString(inStream: InputStream): String {
+        var resultado: String = ""
         val isReader = InputStreamReader(inStream)
         var bReader = BufferedReader(isReader)
         var tempStr: String?
@@ -79,12 +79,12 @@ class MainActivity : AppCompatActivity() {
                 if (tempStr == null) {
                     break
                 }
-                result += tempStr;
+                resultado += tempStr;
             }
         } catch(Ex: Exception) {
             println("Error en convertir a String ${Ex.printStackTrace()}")
         }
-        return result
+        return resultado
     }
 
 }
