@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val personaDao = PersonaDAO()
-    var id: Int? = 0
+    //var id: Int? = 0
     var personaAux: Persona? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
