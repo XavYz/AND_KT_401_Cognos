@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
     var cantidadLote: Int = 0
     var sePuedeCargar: Boolean = false
 
+    var entero = 10
+    val URL = "http://mmc.com/v1/"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -51,8 +54,10 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-
-
+        retrofit = Retrofit.Builder()
+                .baseUrl("http://pokeapi.co/api/v2/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
 
         sePuedeCargar = true
         cantidadLote = 0
@@ -60,7 +65,31 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun obtenerDatos(offset: Int) {
+        val service = retrofit!!.create(PokeInterface::class.java)
+        val pokemonResponseCall =
+                service.obtenerListaPokemon(20, offset)
 
+        pokemonResponseCall.enqueue(object : Callback<PokemonResponse>{
+            override fun onFailure(call: Call<PokemonResponse>?, t: Throwable?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+            }
+
+            override fun onResponse(call: Call<PokemonResponse>?, response: Response<PokemonResponse>?) {
+                sePuedeCargar = true
+                if(response!!.isSuccessful) {
+                    val pokemonResponse = response.body()
+                    val listaPokemon = pokemonResponse!!.results
+                    listaPokemonAdapter!!.adicionarListaPokemon(listaPokemon!!)
+                    for (poke in listaPokemon) {
+                        println(">>>>>>>>>>> ${poke.name}")
+                        println(">>>>>>>>>>> ${poke.url}")
+                        println(">>>>>>>>>>> ${poke.number}")
+                    }
+                }
+
+            }
+        })
 
     }
 
