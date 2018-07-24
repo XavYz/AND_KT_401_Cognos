@@ -30,9 +30,12 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        retrofit = Retrofit.Builder()
+                .baseUrl(PersonaService.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
 
-
-
+        personaService = retrofit!!.create<PersonaService>(PersonaService::class.java!!)
 
         btnSignIn.setOnClickListener {
             attemptLogin()
@@ -72,9 +75,39 @@ class LoginActivity : AppCompatActivity() {
         if (cancel) {
             focusView!!.requestFocus()
         } else {
+            showProgress(true)
 
+            val loginCall = personaService!!.login(LoginBody(userId, password))
+            loginCall.enqueue(object : Callback<Persona> {
+                override fun onResponse(call: Call<Persona>, response: Response<Persona>) {
+                    showProgress(false)
 
+                    if (response.isSuccessful) {
+                        val persona = response.body()
+                        SessionPrefs(this@LoginActivity).get(this@LoginActivity).saveAffiliate(response.body()!!)
+                        showAppointmentsScreen(persona)
+                    } else {
+                        var error = "Ha ocurrido un error. Contacte al administrador"
+                        if (response.errorBody()!!.contentType()!!.subtype() == "json") {
+                            val apiError = ApiError.fromResponseBody(response.errorBody()!!)
+                            error = apiError!!.message!!
+                            Log.d("LoginActivity", apiError.developerMessage)
+                        } else {
+                            try {
+                                Log.d("LoginActivity", response.errorBody()!!.string())
+                            } catch (e: IOException) {
+                                e.printStackTrace()
+                            }
+                        }
+                        showLoginError(error)
+                    }
+                }
 
+                override fun onFailure(call: Call<Persona>, t: Throwable) {
+                    showProgress(false)
+                    showLoginError(t.message!!)
+                }
+            })
         }
     }
 
@@ -92,9 +125,10 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun showAppointmentsScreen(persona: Persona?) {
-
-
-
+        val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("persona", persona)
+        startActivity(intent)
+        finish()
     }
 
     private fun showLoginError(error: String) {
