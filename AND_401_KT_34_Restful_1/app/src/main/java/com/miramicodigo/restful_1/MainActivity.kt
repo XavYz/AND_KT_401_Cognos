@@ -21,9 +21,6 @@ class MainActivity : AppCompatActivity() {
     var cantidadLote: Int = 0
     var sePuedeCargar: Boolean = false
 
-    var entero = 10
-    val URL = "http://mmc.com/v1/"
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -71,7 +68,6 @@ class MainActivity : AppCompatActivity() {
 
         pokemonResponseCall.enqueue(object : Callback<PokemonResponse>{
             override fun onFailure(call: Call<PokemonResponse>?, t: Throwable?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 
             }
 
