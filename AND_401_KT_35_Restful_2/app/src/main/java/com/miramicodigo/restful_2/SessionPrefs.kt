@@ -57,4 +57,13 @@ class SessionPrefs constructor(context: Context) {
         editor.putString(PREFERENCES_PERSONA_TOKEN, null)
         editor.apply()
     }
+
+    fun getPerson() : Persona {
+        var id = mPrefs!!.getString(PREFERENCES_PERSONA_ID, "")
+        var name = mPrefs!!.getString(PREFERENCES_PERSONA_NAME, "")
+        var address = mPrefs!!.getString(PREFERENCES_PERSONA_ADDRESS, "")
+        var gender = mPrefs!!.getString(PREFERENCES_PERSONA_GENDER, "")
+        var token = mPrefs!!.getString(PREFERENCES_PERSONA_TOKEN, "")
+        return Persona(id, name, address, gender, token)
+    }
 }

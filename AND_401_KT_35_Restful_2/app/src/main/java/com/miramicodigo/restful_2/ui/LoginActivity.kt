@@ -126,7 +126,6 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showAppointmentsScreen(persona: Persona?) {
         val intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("persona", persona)
         startActivity(intent)
         finish()
     }

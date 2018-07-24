@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.support.design.widget.Snackbar
 import com.miramicodigo.restful_2.R
 import com.miramicodigo.restful_2.SessionPrefs
-import com.miramicodigo.restful_2.model.Persona
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
 
-        val persona = intent.getSerializableExtra("persona") as Persona
+        val persona = SessionPrefs(this).get(this).getPerson()
 
         tvNombre!!.text = persona.name
         tvUsuario!!.text = persona.id
