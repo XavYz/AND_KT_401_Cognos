@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     }
 
     fun createSimpleNotification(context: Context) {
-        val notification = NotificationCompat.Builder(context)
+        val notification = NotificationCompat.Builder(context, "")
 
         notification.setSmallIcon(R.drawable.ic_android_black_24dp)
 
