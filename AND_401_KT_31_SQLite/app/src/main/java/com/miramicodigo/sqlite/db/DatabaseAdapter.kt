@@ -40,6 +40,7 @@ class DatabaseAdapter(context: Context) {
         contentValues.put(Constants.TELEFONO, telefono)
         contentValues.put(Constants.CORREO, correo)
         contentValues.put(Constants.GENERO, genero)
+
         return db!!.update(Constants.TABLA_PERSONA, contentValues, "${Constants.ID}=?", arrayOf(id.toString() + ""))
     }
 
