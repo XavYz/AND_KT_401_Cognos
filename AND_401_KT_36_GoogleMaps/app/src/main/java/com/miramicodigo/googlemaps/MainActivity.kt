@@ -17,6 +17,10 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.model.*
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
+import com.google.android.gms.maps.model.BitmapDescriptor
+
+
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
@@ -177,6 +181,26 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
 
     companion object {
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
+    }
+
+    private fun getBitmapDescriptor(id: Int): BitmapDescriptor {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val vectorDrawable = getDrawable(id) as VectorDrawable
+
+            val h = vectorDrawable.intrinsicHeight
+            val w = vectorDrawable.intrinsicWidth
+
+            vectorDrawable.setBounds(0, 0, w, h)
+
+            val bm = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
+            val canvas = Canvas(bm)
+            vectorDrawable.draw(canvas)
+
+            return BitmapDescriptorFactory.fromBitmap(bm)
+
+        } else {
+            return BitmapDescriptorFactory.fromResource(id)
+        }
     }
 
     private fun setUpMap() {
