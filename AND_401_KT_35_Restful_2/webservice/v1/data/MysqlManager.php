@@ -1,30 +1,15 @@
 <?php
-/**
- * Clase que envuelve una instancia de la clase PDO
- * para el manejo de la base de controladores
- */
 
 require_once 'login_mysql.php';
 
-
 class MysqlManager {
-
-    /**
-     * Única instancia de la clase
-     */
     private static $mysqlManager = null;
-
-    /**
-     * Instancia de PDO
-     */
     private static $pdo;
 
     final private function __construct() {
         try {
-            // Crear nueva conexión PDO
             self::getDb();
         } catch (PDOException $e) {
-            // Manejo de excepciones
             throw new ApiException(
                 500,
                 0,
@@ -44,7 +29,6 @@ class MysqlManager {
     public function getDb() {
         if (self::$pdo == null) {
 
-            // Parámetros de PDO
             $dsn = sprintf('mysql:dbname=%s; host=%s', MYSQL_DATABASE_NAME, MYSQL_HOST);
             $username = MYSQL_USERNAME;
             $passwd = MYSQL_PASSWORD;

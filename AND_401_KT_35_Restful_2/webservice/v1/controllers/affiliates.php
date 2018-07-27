@@ -2,9 +2,6 @@
 
 require_once 'data/MysqlManager.php';
 
-/**
- * Controlador del recurso "/affiliates"
- */
 class affiliates {
 
     public static function get($urlSegments) {
@@ -48,11 +45,9 @@ class affiliates {
     }
 
     private static function saveAffiliate() {
-        // Obtener parámetros de la petición
         $parameters = file_get_contents('php://input');
         $decodedParameters = json_decode($parameters, true);
 
-        // Controlar posible error de parsing JSON
         if (json_last_error() != JSON_ERROR_NONE) {
             $internalServerError = new ApiException(
                 500,
@@ -63,15 +58,12 @@ class affiliates {
             throw $internalServerError;
         }
 
-        // Verificar integridad de datos
-        // TODO: Implementar restricciones de datos adicionales
         if (!isset($decodedParameters["id"]) ||
             !isset($decodedParameters["password"]) ||
             !isset($decodedParameters["name"]) ||
             !isset($decodedParameters["address"]) ||
             !isset($decodedParameters["gender"])
         ) {
-            // TODO: Crear una excepción individual por cada causa anómala
             throw new ApiException(
                 400,
                 0,
@@ -80,10 +72,8 @@ class affiliates {
                 "Uno de los atributos del afiliado no está definido en los parámetros");
         }
 
-        // Insertar afiliado
         $dbResult = self::insertAffiliate($decodedParameters);
 
-        // Procesar resultado de la inserción
         if ($dbResult) {
             return ["status" => 201, "message" => "Afiliado registrado"];
         } else {
@@ -98,11 +88,9 @@ class affiliates {
 
     private static function authAffiliate() {
 
-        // Obtener parámetros de la petición
         $parameters = file_get_contents('php://input');
         $decodedParameters = json_decode($parameters, true);
 
-        // Controlar posible error de parsing JSON
         if (json_last_error() != JSON_ERROR_NONE) {
             $internalServerError = new ApiException(
                 500,
@@ -113,7 +101,6 @@ class affiliates {
             throw $internalServerError;
         }
 
-        // Verificar integridad de datos
         if (!isset($decodedParameters["id"]) ||
             !isset($decodedParameters["password"])
         ) {
@@ -129,10 +116,8 @@ class affiliates {
         $userId = $decodedParameters["id"];
         $password = $decodedParameters["password"];
 
-        // Buscar usuario en la tabla
         $dbResult = self::findAffiliateByCredentials($userId, $password);
 
-        // Procesar resultado de la consulta
         if ($dbResult != NULL) {
             return [
                 "status" => 200,
@@ -154,27 +139,22 @@ class affiliates {
     }
 
     private static function insertAffiliate($decodedParameters) {
-        //Extraer datos del afiliado
         $id = $decodedParameters["id"];
         $password = $decodedParameters["password"];
         $name = $decodedParameters["name"];
         $address = $decodedParameters["address"];
         $gender = $decodedParameters["gender"];
 
-        // Encriptar contraseña
         $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        // Generar token
         $token = uniqid(rand(), TRUE);
 
         try {
             $pdo = MysqlManager::get()->getDb();
 
-            // Componer sentencia INSERT
             $sentence = "INSERT INTO persona (id, hash_password, name, address, gender, token)" .
                 " VALUES (?,?,?,?,?,?)";
 
-            // Preparar sentencia
             $preparedStament = $pdo->prepare($sentence);
             $preparedStament->bindParam(1, $id);
             $preparedStament->bindParam(2, $hashPassword);
@@ -183,7 +163,6 @@ class affiliates {
             $preparedStament->bindParam(5, $gender);
             $preparedStament->bindParam(6, $token);
 
-            // Ejecutar sentencia
             return $preparedStament->execute();
 
         } catch (PDOException $e) {
@@ -200,18 +179,14 @@ class affiliates {
         try {
             $pdo = MysqlManager::get()->getDb();
 
-            // Componer sentencia SELECT
             $sentence = "SELECT * FROM persona WHERE id=?";
 
-            // Preparar sentencia
             $preparedSentence = $pdo->prepare($sentence);
             $preparedSentence->bindParam(1, $userId, PDO::PARAM_INT);
 
-            // Ejecutar sentencia
             if ($preparedSentence->execute()) {
                 $affiliateData = $preparedSentence->fetch(PDO::FETCH_ASSOC);
 
-                // Verificar contraseña
                 if (password_verify($password, $affiliateData["hash_password"])) {
                     return $affiliateData;
                 } else {

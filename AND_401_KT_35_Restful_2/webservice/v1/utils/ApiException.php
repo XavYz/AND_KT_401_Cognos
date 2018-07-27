@@ -1,8 +1,5 @@
 <?php
 
-/**
- * Excepción personalizada para el envío de respuestas
- */
 class ApiException extends Exception {
     private $status;
     private $apiCode;
