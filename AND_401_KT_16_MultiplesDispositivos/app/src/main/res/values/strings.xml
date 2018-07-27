@@ -1,12 +1,7 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">AND_401_KT_16_MultiplesDispositivos</string>
-=======
     <string name="app_name">Multiples Dispositivos</string>
-
     <string name="tvTitulo">Titulo Pantalla</string>
     <string name="tvSubtitulo">Hola</string>
     <string name="tvSubtitulo2">Bienvenido</string>
 
->>>>>>> a5f3984f06776ec12ede3f7c09c996f5b1772dbc
 </resources>
