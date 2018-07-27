@@ -1,107 +1,107 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f041a5bdb3683ae70119f01e402bc10e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e961dea463f4fb67d1be0343327de1e7\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e4089efe2577409169f19bbd8b7a0e00\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7df4b4be02aa22cdc3d6f4530e25d204\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b2107799f2711dd83c1d701cfc332b99\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6ddefb4e0f9ddc9caad6594051b7f3e9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\f009319deda93717ab72764a39883cdd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e9ae767778a28d6868ed57714e521b78\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\060712422e436b6d6fd49a02179fbd97\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ee88cc01fa462a137a477b5b5672ded8\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4d3c03b0ec146a49056b5902e72bfbd7\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\659c4cdce59f3f1dcb1860d06afc1602\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9da08da9f26505505d1c66fa0bfa3ec8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0baddfb99e0d3789ccf02b9622d6b25a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/d011108887447d5d7cd2cbbe98888445/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/795bd616f86b72bc10eec87164ec7b8d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/6402205c17444cbdf645edc1fa709ad2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/16e771e1bffb369757499bd827a5fd99/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/20aef30684585ea51e169f08f6e8a089/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7d965e74afb1a89c393b2a5909c68a06/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1b70f1d7610a5f13b576cd0f9a15c4e4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/2338c6c5eddcb14b4b6e37b9dcce279b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fbb470b7df180483297022d5acbcd079/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d68256129dffa5b24f26594573575023/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:3:5-52
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:5:5-20:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e961dea463f4fb67d1be0343327de1e7\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e961dea463f4fb67d1be0343327de1e7\AndroidManifest.xml:9:5-20
+ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0baddfb99e0d3789ccf02b9622d6b25a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0baddfb99e0d3789ccf02b9622d6b25a/AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.miramicodigo.listaspersonalizadas.MainActivity
-ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.miramicodigo.listaspersonalizadas.DetalleActivity
-ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:19:9-52
+ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:19:9-62
 	android:name
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml:19:19-50
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml:19:19-50
 uses-sdk
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f041a5bdb3683ae70119f01e402bc10e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f041a5bdb3683ae70119f01e402bc10e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e961dea463f4fb67d1be0343327de1e7\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e961dea463f4fb67d1be0343327de1e7\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e4089efe2577409169f19bbd8b7a0e00\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e4089efe2577409169f19bbd8b7a0e00\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7df4b4be02aa22cdc3d6f4530e25d204\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7df4b4be02aa22cdc3d6f4530e25d204\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b2107799f2711dd83c1d701cfc332b99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b2107799f2711dd83c1d701cfc332b99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6ddefb4e0f9ddc9caad6594051b7f3e9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6ddefb4e0f9ddc9caad6594051b7f3e9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\f009319deda93717ab72764a39883cdd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\f009319deda93717ab72764a39883cdd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e9ae767778a28d6868ed57714e521b78\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e9ae767778a28d6868ed57714e521b78\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\060712422e436b6d6fd49a02179fbd97\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\060712422e436b6d6fd49a02179fbd97\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ee88cc01fa462a137a477b5b5672ded8\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ee88cc01fa462a137a477b5b5672ded8\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4d3c03b0ec146a49056b5902e72bfbd7\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4d3c03b0ec146a49056b5902e72bfbd7\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\659c4cdce59f3f1dcb1860d06afc1602\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\ANDROID\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\659c4cdce59f3f1dcb1860d06afc1602\AndroidManifest.xml:20:5-44
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9da08da9f26505505d1c66fa0bfa3ec8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9da08da9f26505505d1c66fa0bfa3ec8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0baddfb99e0d3789ccf02b9622d6b25a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/0baddfb99e0d3789ccf02b9622d6b25a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/d011108887447d5d7cd2cbbe98888445/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/d011108887447d5d7cd2cbbe98888445/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/795bd616f86b72bc10eec87164ec7b8d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/795bd616f86b72bc10eec87164ec7b8d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/6402205c17444cbdf645edc1fa709ad2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/6402205c17444cbdf645edc1fa709ad2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/16e771e1bffb369757499bd827a5fd99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/16e771e1bffb369757499bd827a5fd99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/20aef30684585ea51e169f08f6e8a089/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/20aef30684585ea51e169f08f6e8a089/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7d965e74afb1a89c393b2a5909c68a06/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7d965e74afb1a89c393b2a5909c68a06/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1b70f1d7610a5f13b576cd0f9a15c4e4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1b70f1d7610a5f13b576cd0f9a15c4e4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/2338c6c5eddcb14b4b6e37b9dcce279b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/2338c6c5eddcb14b4b6e37b9dcce279b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fbb470b7df180483297022d5acbcd079/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fbb470b7df180483297022d5acbcd079/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d68256129dffa5b24f26594573575023/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/lizarraga/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d68256129dffa5b24f26594573575023/AndroidManifest.xml:20:5-44
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-		ADDED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
-		INJECTED from C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/AndroidManifest.xml

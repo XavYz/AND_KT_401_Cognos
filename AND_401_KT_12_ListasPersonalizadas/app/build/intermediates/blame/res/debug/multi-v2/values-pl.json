@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\COMPARTIDA\\ANDROID COMPARTIDA\\Demos\\AND_401_KT_12_ListasPersonalizadas\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "/Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ANDROID\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\e9ae767778a28d6868ed57714e521b78\\res\\values-pl\\values-pl.xml",
+                    "source": "/Users/lizarraga/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7d965e74afb1a89c393b2a5909c68a06/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ANDROID\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f041a5bdb3683ae70119f01e402bc10e\\res\\values-pl\\values-pl.xml",
+                    "source": "/Users/lizarraga/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9da08da9f26505505d1c66fa0bfa3ec8/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

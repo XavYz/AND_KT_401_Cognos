@@ -1,4 +1,4 @@
-#Thu May 24 09:24:04 BOT 2018
-base.0=C\:\\COMPARTIDA\\ANDROID COMPARTIDA\\Demos\\AND_401_KT_12_ListasPersonalizadas\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+#Thu Jul 26 20:15:11 BOT 2018
+base.0=/Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/build/intermediates/transforms/dexMerger/debug/9
 path.0=classes.dex
 renamed.0=classes.dex

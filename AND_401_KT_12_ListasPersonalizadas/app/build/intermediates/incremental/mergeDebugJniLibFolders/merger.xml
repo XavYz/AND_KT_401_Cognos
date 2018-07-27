@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\COMPARTIDA\ANDROID COMPARTIDA\Demos\AND_401_KT_12_ListasPersonalizadas\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/lizarraga/AndroidStudioProjects/Cognos/AND_KT_401_Cognos/AND_401_KT_12_ListasPersonalizadas/app/src/debug/jniLibs"/></dataSet></merger>

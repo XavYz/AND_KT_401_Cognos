@@ -6,9 +6,7 @@ import android.content.Intent
 import android.widget.AdapterView
 import android.app.Activity
 import android.view.View
-import com.miramicodigo.listaspersonalizadas.R.id.lvLista
-import kotlinx.android.synthetic.main.activity_main.lvLista
-import java.util.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.collections.ArrayList
 
 
@@ -52,4 +50,5 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         intent.putExtra("poke", datos!![position])
         startActivity(intent)
     }
+
 }
